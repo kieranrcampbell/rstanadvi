@@ -60,9 +60,10 @@ rstanadvi <- function(stan_model_name, data, path_to_stanmodel = ".", init = NUL
   
   # construct commands
   curr_dir <- getwd()
+  run_model_prefix <- paste0(path_to_stanmodel, "/")
   
   make_cmd <- paste0("cd ", path_to_cmdstan, "; make ", file.path(curr_dir, path_to_stanmodel, stan_model_name))
-  run_cmd <- paste0("./", stan_model_name, " variational data file=", data_file_name)
+  run_cmd <- paste0(run_model_prefix, stan_model_name, " variational data file=", data_file_name)
   if(!is.null(init)) run_cmd <- paste0(run_cmd, " init=", init_file_name)
   run_cmd <- paste0(run_cmd, " output file=", output_file_name)
   
