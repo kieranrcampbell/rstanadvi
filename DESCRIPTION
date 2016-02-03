@@ -1,0 +1,13 @@
+Package: rstanadvi
+Title: Small wrapper for ADVI inference in Stan from within R
+Version: 0.0.0.9000
+Authors@R: person("Kieran", "Campbell", email = "kieran.campbell@well.ox.ac.uk", role = c("aut", "cre"))
+Description: Small wrapper for ADVI inference in Stan from within R.
+Depends:
+    R (>= 3.2.0)
+License: None
+LazyData: true
+Imports:
+    rstan,
+    readr
+RoxygenNote: 5.0.1
