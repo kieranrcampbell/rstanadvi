@@ -40,7 +40,7 @@ stan_rdump_list <- function(l, file) {
 #' @export
 #' @return A \code{data.frame} containing one column for each parameter and a row for each
 #' of the posterior samples (default 1000).
-stan_variational <- function(stan_model_name, data, path_to_stanmodel = ".", init = NULL,
+rstanadvi <- function(stan_model_name, data, path_to_stanmodel = ".", init = NULL,
                              path_to_cmdstan = "../cmdstan-2.9.0",
                              data_file_name = "data.R", init_file_name = "init.R",
                              output_file_name = paste0(stan_model_name, ".txt")) {

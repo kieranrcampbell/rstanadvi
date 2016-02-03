@@ -20,8 +20,7 @@ data <- list(N = length(x), x = x)
 fit <- rstanadvi("gauss", data = data, path_to_cmdstan = "../cmdstan-2.9.0")
 ```
 
-## Contact
-`kieran` (dot) `campbell` (at) `well` (dot) `ox` (dot) `ac` (dot) `uk`
+
 
 
 
